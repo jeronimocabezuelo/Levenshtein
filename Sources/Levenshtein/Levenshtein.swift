@@ -33,8 +33,8 @@ private struct _LevenshteinMatrix {
 }
 
 public func levenshteinDistance(_ u: String, _ v: String) -> Int {
-    let m = u.characters.count
-    let n = v.characters.count
+    let m = Array(u).count
+    let n = Array(v).count
     
     var D = _LevenshteinMatrix(m: m, n: n)
     
